@@ -28,6 +28,9 @@ function get_info_rue($nom)
 function bdd_connexion()
 {
     try {
+        /*
+            Changement des informations de la base de donnée ici
+        */
         $bdd = new PDO('mysql:host=localhost;dbname=mairie_quartier', 'root', 'root');
         return $bdd;
     } catch (PDOException $e) {
